@@ -14,20 +14,21 @@
           "<all_urls>"
         ],
         "css": [
-          "css/style.css"
-        ], 
-        "js": [
-          "js/timer.js"
+          "css/blocked.css"
         ]
       }
     ],
     "web_accessible_resources": [
-      "css/style.css"
+      "css/blocked.css"
     ],
     "background": {
-      "scripts": ["background.js"]
+      "scripts": [
+        "background.js"
+      ]
     },
-    "browser_action": {},
-    "permissions": ["tabs"]
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": ["tabs", "alarms", "storage"]
   }
   

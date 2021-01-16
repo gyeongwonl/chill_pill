@@ -1,0 +1,17 @@
+html {
+    background: radial-gradient(68.34% 50% at 50% 50%, #2D9AFF 0%, #41DEE8 0%, #A22DFF 100%);
+    height: 100vh;
+    padding: 50px 30px;	
+    display: flex;
+    align-items: center;	
+    justify-content: center;
+}
+  
+html::before {
+    content: '!! Stop and focus on chilling !!';
+    font-size: xx-large;
+}
+  
+body {	
+    display: none !important;	
+}
