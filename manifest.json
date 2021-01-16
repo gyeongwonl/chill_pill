@@ -22,9 +22,13 @@
       "css/blocked.css"
     ],
     "background": {
-      "scripts": ["background.js"]
+      "scripts": [
+        "background.js"
+      ]
     },
     "browser_action": {},
-    "permissions": ["tabs"]
+    "permissions": [
+      "tabs"
+    ]
   }
   
