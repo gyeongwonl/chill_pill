@@ -15,6 +15,9 @@
         ],
         "css": [
           "css/style.css"
+        ], 
+        "js": [
+          "js/timer.js"
         ]
       }
     ],
