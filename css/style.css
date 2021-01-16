@@ -1,25 +1,11 @@
-* {
-  box-sizing: border-box;
-  color: #fff;
-  font-family: monospace;
-  font-size: 5vw;
-  font-weight: bold;
-  text-align: center;
-}
-
-html {
-  background: radial-gradient(68.34% 50% at 50% 50%, #2D9AFF 0%, #41DEE8 0%, #A22DFF 100%);
+#landing-page{
   height: 100vh;
-  padding: 50px 30px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  background-color: #5050ff;
+}
+#landing-page .h1{
+  transition: 3s;
 }
 
-html::before {
-  content: '!! Stop !!';
-}
-
-body {
-  display: none !important;
-}

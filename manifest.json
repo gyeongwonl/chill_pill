@@ -1,12 +1,12 @@
 {
     "manifest_version": 2,
-    "name": "site-blocker",
+    "name": "Chill Pill",
     "version": "1.0.0",
-    "description": "Site blocker Chrome extension",
+    "description": "Chrome extension to help you stay focused on chilling",
     "icons": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
+      "16": "icons/icon.png",
+      "48": "icons/icon.png",
+      "128": "icons/icon.png"
     },
     "content_scripts": [
       {
@@ -20,5 +20,11 @@
     ],
     "web_accessible_resources": [
       "css/style.css"
-    ]
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "browser_action": {},
+    "permissions": ["tabs"]
   }
+  
