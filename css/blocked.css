@@ -8,7 +8,8 @@ html {
 }
   
 html::before {
-    content: '!! Stop !!';
+    content: '!! Stop and focus on chilling !!';
+    font-size: xx-large;
 }
   
 body {	
