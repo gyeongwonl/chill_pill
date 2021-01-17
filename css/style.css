@@ -24,25 +24,10 @@ body{
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
 }
-
-@keyframes fadein {
-  from { opacity: 0;}
-  to { opacity: 1 } 
-}
-  
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-  from { opacity: 0; }
-to { opacity: 1 }
-}
-
-
 #landing h1{
-  opacity: 0;
   color: #dedfeb;
-  -webkit-transition: opacity 3.7s ease-in;
-  transition: opacity 3.7s ease-in;
+  -webkit-transition: fadein 3.7s ease-in;
+  transition: fadein 3.7s ease-in;
   margin-bottom: 10vh;
 }
 #landing #scroll-down {
@@ -78,3 +63,17 @@ to { opacity: 1 }
 #iframes{
   height: 0px;
 }
+
+@keyframes fadein {
+  from { opacity: 0;}
+  to { opacity: 1 } 
+}
+  
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+to { opacity: 1 }
+}
+
+
