@@ -1,1 +1,3 @@
-$("#landing-page h1").addClass("load");
+$(document).ready(function () {
+    $("#landing h1").css('opacity', '1');
+});
