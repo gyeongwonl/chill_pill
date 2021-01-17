@@ -1,3 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #5050ff;
+}
 #landing{
   height: 100vh;
   display: flex;
@@ -8,15 +14,67 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-#landing h1{
-  color: #dedfeb;
-  -webkit-transition: opacity 2s ease-in;
-  transition: opacity 2s ease-in;
+  background-attachment: fixed;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 }
 
+@keyframes fadein {
+  from { opacity: 0;}
+  to { opacity: 1 } 
+}
+  
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+to { opacity: 1 }
+}
+
+
+#landing h1{
+  opacity: 0;
+  color: #dedfeb;
+  -webkit-transition: opacity 3.7s ease-in;
+  transition: opacity 3.7s ease-in;
+  margin-bottom: 10vh;
+}
+#landing #scroll-down {
+  border-color: transparent;
+  background-color: transparent;
+  position:absolute; 
+  bottom:0; 
+  margin-bottom: 5vh;
+  cursor: pointer;
+}
+
+#landing #scroll-down:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+#main-content{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff3e7;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#main-content iframe{
+  margin: 10px;
+}
 .load{
   opacity: 1;
 }
 
-
+#iframes{
+  height: 0px;
+}

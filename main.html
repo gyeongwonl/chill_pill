@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Time to Relax</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="./css/style.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
     </head>
     <body>
         <div class="container-fluid" id="landing">
             <h1 class="display-4">It's time to take wind down and relax.</h1>
+            <a href="#main-content" id="scroll-down">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#dedfeb" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </a>
         </div>
-        <div class="container-fluid" id="landing">
-            <h1>It's time to take wind down and relax.</h1>
+        <div class="container-fluid" id="main-content">
+            
+            <h3 class="display-4">Here's some listening that will help get you though the day</h3>
+            <div id="iframes"></div>
+                <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6oU7rbE4ffh" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> 
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/lFcSrYw-ARY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
     </body>
     
