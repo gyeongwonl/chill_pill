@@ -22,7 +22,7 @@
       "css/blocked.css"
     ],
     "background": {
-      "scripts": ["background.js"]
+      "scripts": ["thirdParty/jquery-2.0.3.js","background.js"]
     },
     "browser_action": {},
     "permissions": ["tabs"]

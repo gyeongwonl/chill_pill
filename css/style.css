@@ -1,17 +1,21 @@
-#landing-page{
+#landing{
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #5050ff;
+  background-image: url("../img/sunboi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#landing-page h1{
-  opacity: 0;
-  transition: 3s;
+#landing h1{
+  color: #dedfeb;
   -webkit-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
 }
 
-#landing-page h1.load{
+.load{
   opacity: 1;
 }
 
