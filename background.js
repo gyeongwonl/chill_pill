@@ -5,7 +5,8 @@ chrome.alarms.create('countdownMin', {
 chrome.alarms.onAlarm.addListener(function(alarm) {
   if (alarm.name == "countdownMin") {
     chrome.windows.create({
-      url: chrome.runtime.getURL("main.html")
+      url: chrome.runtime.getURL("main.html"),
+      state: "maximized"
     });
   }
 });
