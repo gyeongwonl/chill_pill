@@ -4,6 +4,18 @@ html {
 body{
   background-color: #5050ff;
 }
+button{
+  background-color: #5050ff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 15px 5px 0px 5px;
+  cursor: pointer;
+}
 #landing{
   height: 100vh;
   display: flex;
@@ -69,11 +81,11 @@ body{
   to { opacity: 1 } 
 }
   
-
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
   from { opacity: 0; }
 to { opacity: 1 }
 }
+
 
 
